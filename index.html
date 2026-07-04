@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fly Girl Events & Design | Luxury Event Design Studio</title>
+  <meta name="description" content="Luxury event design and destination celebrations from Fly Girl Events & Design — based in Frisco, Texas, serving Dallas–Fort Worth, nationwide, and worldwide." />
+  <link rel="canonical" href="https://flygirl.events/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="Fly Girl Events & Design | Luxury Event Design Studio" />
+  <meta property="og:description" content="Luxury event design and destination celebrations — based in Frisco, Texas, serving Dallas–Fort Worth, nationwide, and worldwide." />
+  <meta property="og:url" content="https://flygirl.events/" />
+  <meta property="og:image" content="https://flygirl.events/images/hero-cinemagraph-poster.jpg" />
+  <meta property="og:image:alt" content="Luxury destination wedding ceremony at sunset by Fly Girl Events & Design" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fly Girl Events & Design | Luxury Event Design Studio" />
+  <meta name="twitter:description" content="Luxury event design and destination celebrations — based in Frisco, Texas, serving Dallas–Fort Worth, nationwide, and worldwide." />
+  <meta name="twitter:image" content="https://flygirl.events/images/hero-cinemagraph-poster.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Preload the hero photograph — the only above-the-fold image on the site -->
+  <link rel="preload" as="image" href="images/hero-cinemagraph-poster.jpg" fetchpriority="high" />
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://flygirl.events/#website",
+    "name": "Fly Girl Events & Design",
+    "url": "https://flygirl.events/",
+    "publisher": { "@id": "https://flygirl.events/#business" }
+  }
+  </script>
+
+  <!-- Structured data: Business entity.
+       Note: schema.org has no official "EventPlanner" type, so this uses
+       ProfessionalService — the closest valid LocalBusiness subtype for a
+       service-based studio without a public storefront — combined with
+       knowsAbout/makesOffer to describe the event-design specialty. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://flygirl.events/#business",
+    "name": "Fly Girl Events & Design",
+    "description": "Luxury event design studio based in Frisco, Texas, specializing in destination weddings, custom tablescapes, and editorial celebrations for clients throughout Dallas–Fort Worth, nationwide, and worldwide.",
+    "url": "https://flygirl.events/",
+    "email": "hello@flygirlevents.com",
+    "image": "https://flygirl.events/images/hero-cinemagraph-poster.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frisco",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Frisco, TX" },
+      { "@type": "City", "name": "Dallas, TX" },
+      { "@type": "City", "name": "Plano, TX" },
+      { "@type": "City", "name": "Prosper, TX" },
+      { "@type": "City", "name": "McKinney, TX" },
+      { "@type": "City", "name": "Allen, TX" },
+      { "@type": "City", "name": "Southlake, TX" },
+      { "@type": "City", "name": "Highland Park, TX" },
+      { "@type": "City", "name": "University Park, TX" },
+      { "@type": "AdministrativeArea", "name": "Dallas–Fort Worth" },
+      { "@type": "State", "name": "Texas" },
+      { "@type": "Country", "name": "United States" }
+    ],
+    "priceRange": "$$$$",
+    "knowsAbout": [
+      "Luxury Event Design", "Destination Weddings", "Wedding Styling",
+      "Luxury Tablescapes", "Custom Tablescape Design",
+      "Corporate Hospitality Events", "Luxury Children's Celebrations",
+      "Interior Styling"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Destination Weddings", "url": "https://flygirl.events/experiences.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Signature Displays & Luxury Tablescapes", "url": "https://flygirl.events/signature-displays.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Luxury Children's Celebrations", "url": "https://flygirl.events/little-luxe-collection.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate & Hospitality Events", "url": "https://flygirl.events/experiences.html" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interior Styling", "url": "https://flygirl.events/experiences.html" } }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── HOME-SPECIFIC ────────────────────────────────── */
+
+    /* ═══ HERO ═══
+       Live background: video/hero-cinemagraph.mp4 — a luxury
+       destination wedding cinemagraph, color-corrected and built
+       into a seamless loop. Poster: images/hero-cinemagraph-poster.jpg
+       (first frame — shown before playback starts, and permanently
+       for prefers-reduced-motion visitors, who never fetch the video).
+       Overlay below is a graduated legibility scrim, strongest through
+       the text zone, easing off by the lower half so the archway and
+       candlelight keep their warmth. */
+    .home-hero {
+      position: relative;
+      height: 100svh;
+      min-height: 640px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+      padding-top: clamp(8.5rem, 24vh, 13rem);
+    }
+
+    .home-hero__image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      animation: heroImageReveal 4500ms var(--ease-fade) forwards;
+    }
+
+    /* The video carries its own native motion — no added CSS zoom/pan
+       on top of it. The brief explicitly excludes camera movement we'd
+       be introducing ourselves. */
+    video.home-hero__image {
+      animation: none;
+      transform: none;
+    }
+
+    @keyframes heroImageReveal {
+      from { transform: scale(1.09); }
+      to   { transform: scale(1); }
+    }
+
+    .home-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20, 10, 15, 0.62) 0%,
+        rgba(20, 10, 15, 0.70) 12%,
+        rgba(20, 10, 15, 0.76) 26%,
+        rgba(20, 10, 15, 0.56) 45%,
+        rgba(20, 10, 15, 0.30) 60%,
+        rgba(20, 10, 15, 0.16) 80%,
+        rgba(20, 10, 15, 0.10) 100%
+      );
+      /* Tuned to this photograph: strongest through the text zone
+         (where the sunset sky is brightest), easing off by the
+         lower half so the archway and candlelight stay vivid. */
+    }
+
+    .home-hero__content {
+      position: relative;
+      z-index: 2;
+      padding-inline: var(--space-xl);
+      max-width: 820px;
+      margin-inline: auto;
+    }
+
+    .home-hero__eyebrow {
+      position: relative;
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 400;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      padding-top: 1.75rem;
+      margin-bottom: var(--space-lg);
+    }
+
+    .home-hero__eyebrow::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 28px;
+      height: 1px;
+      background-color: var(--color-gold);
+      opacity: 0.7;
+    }
+
+    .home-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.75rem, 6.4vw, 5.25rem);
+      font-weight: 300;
+      font-style: normal;
+      color: var(--color-cream);
+      line-height: 1.12;
+      letter-spacing: 0.005em;
+      margin-bottom: var(--space-lg);
+    }
+
+    .home-hero__title em {
+      font-style: italic;
+      color: var(--color-gold-light);
+    }
+
+    .home-hero__subtitle {
+      font-family: var(--font-body);
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: rgba(250, 248, 245, 0.68);
+      margin-bottom: var(--space-xl);
+      letter-spacing: 0.03em;
+      max-width: 440px;
+      margin-inline: auto;
+      line-height: 1.75;
+    }
+
+    /* Staggered entrance */
+    .home-hero__eyebrow,
+    .home-hero__title,
+    .home-hero__subtitle,
+    .home-hero__content .btn-primary {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: heroTextReveal 1100ms var(--ease-luxury) forwards;
+    }
+
+    .home-hero__eyebrow  { animation-delay: 400ms; }
+    .home-hero__title    { animation-delay: 650ms; }
+    .home-hero__subtitle { animation-delay: 950ms; }
+    .home-hero__content .btn-primary { animation-delay: 1200ms; }
+
+    @keyframes heroTextReveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .home-hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      opacity: 0;
+      animation: heroTextReveal 1100ms var(--ease-luxury) forwards;
+      animation-delay: 1600ms;
+    }
+
+    .home-hero__scroll-line {
+      width: 1px;
+      height: 44px;
+      background-color: rgba(226, 201, 154, 0.5);
+      animation: scrollPulse 2.6s ease-in-out infinite;
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50%       { opacity: 1;   transform: scaleY(1.18); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .home-hero__image,
+      .home-hero__eyebrow,
+      .home-hero__title,
+      .home-hero__subtitle,
+      .home-hero__content .btn-primary,
+      .home-hero__scroll,
+      .home-hero__scroll-line {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* ═══ PREVIEW GRID ═══ */
+    .preview-section {
+      padding-block: clamp(5rem, 9vw, 8rem) clamp(6rem, 10vw, 9rem);
+      background-color: var(--color-cream);
+    }
+
+    .preview-section__header {
+      text-align: center;
+      margin-bottom: clamp(3rem, 6vw, 4.5rem);
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background-color: var(--color-mist);
+    }
+
+    .preview-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+      display: block;
+    }
+
+    .preview-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-luxury);
+    }
+
+    /* Flat, restrained tonal variation — drawn from the existing
+       palette only, no gradients. */
+    .preview-card__image--tone-1 { background-color: var(--color-plum); }
+    .preview-card__image--tone-2 { background-color: color-mix(in srgb, var(--color-mauve) 55%, var(--color-plum) 45%); }
+    .preview-card__image--tone-3 { background-color: var(--color-plum-deep); }
+
+    .preview-card:hover .preview-card__image {
+      transform: scale(1.045);
+    }
+
+    .preview-card__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(28, 14, 21, 0.85) 0%,
+        rgba(28, 14, 21, 0.18) 55%,
+        transparent 100%
+      );
+      /* Functional legibility scrim for text-over-photo — not a
+         decorative fill. Standard editorial practice. */
+    }
+
+    .preview-card__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-lg);
+    }
+
+    .preview-card__eyebrow {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .preview-card__title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-cream);
+      line-height: 1.2;
+      margin-bottom: var(--space-xs);
+    }
+
+    .preview-card__text {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: rgba(250, 248, 245, 0.68);
+      line-height: 1.6;
+      margin-bottom: var(--space-sm);
+    }
+
+    .preview-card__link {
+      position: relative;
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      padding-bottom: 3px;
+    }
+
+    .preview-card__link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 1px;
+      background-color: var(--color-gold);
+      transition: right var(--duration-med) var(--ease-luxury);
+    }
+
+    .preview-card:hover .preview-card__link::after {
+      right: 0;
+    }
+
+    /* ═══ EDITORIAL FEATURE — Signature Displays ═══ */
+    .editorial-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 600px;
+    }
+
+    .editorial-feature__image-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .editorial-feature__image {
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-luxury);
+    }
+
+    .editorial-feature:hover .editorial-feature__image {
+      transform: scale(1.03);
+    }
+
+    .editorial-feature__content {
+      background-color: var(--color-plum-deep);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(4rem, 6vw, 7rem) clamp(3rem, 6vw, 6rem);
+    }
+
+    .editorial-feature__content .eyebrow {
+      margin-bottom: var(--space-lg);
+    }
+
+    .editorial-feature__content .section-heading {
+      color: var(--color-cream);
+      font-size: clamp(var(--text-2xl), 3vw, var(--text-4xl));
+      margin-bottom: var(--space-md);
+    }
+
+    .editorial-feature__content p {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: rgba(250, 248, 245, 0.65);
+      line-height: 1.85;
+      max-width: 400px;
+      margin-bottom: var(--space-lg);
+    }
+
+    /* ═══ SIGNATURE TEASER — Gallery ═══ */
+    .signature-teaser {
+      padding-block: clamp(7rem, 12vw, 11rem);
+      text-align: center;
+      background-color: var(--color-mist);
+    }
+
+    .signature-teaser .eyebrow {
+      margin-bottom: var(--space-lg);
+    }
+
+    .signature-teaser .section-heading {
+      margin-bottom: var(--space-md);
+    }
+
+    .signature-teaser p {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.72);
+      max-width: 480px;
+      margin-inline: auto;
+      margin-bottom: var(--space-xl);
+      line-height: 1.85;
+    }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 900px) {
+      .preview-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .preview-grid .preview-card:nth-child(3) {
+        grid-column: 1 / -1;
+        aspect-ratio: 16/9;
+      }
+
+      .editorial-feature {
+        grid-template-columns: 1fr;
+      }
+
+      .editorial-feature__image,
+      .editorial-feature__image-wrap {
+        min-height: 420px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-grid .preview-card:nth-child(3) {
+        grid-column: auto;
+        aspect-ratio: 3/4;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--transparent" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <main>
+  <section class="home-hero" aria-label="Hero">
+    <video
+      class="home-hero__image"
+      id="heroVideo"
+      muted
+      loop
+      playsinline
+      preload="none"
+      poster="images/hero-cinemagraph-poster.jpg"
+      aria-hidden="true"
+    >
+      <img class="home-hero__image" src="images/hero-cinemagraph-poster.jpg" alt="Luxury destination wedding ceremony at sunset with a floral altar, beachside aisle, and candlelight, designed by Fly Girl Events & Design">
+    </video>
+    <div class="home-hero__overlay"></div>
+
+    <div class="home-hero__content">
+      <span class="home-hero__eyebrow">Luxury Event Design Studio</span>
+      <h1 class="home-hero__title">Where Every Detail<br>Tells Your <em>Story</em></h1>
+      <p class="home-hero__subtitle">Luxury event design for life's most extraordinary moments.</p>
+      <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+    </div>
+
+    <div class="home-hero__scroll" aria-hidden="true">
+      <div class="home-hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <script>
+    // Hero cinemagraph — only fetched and played if the visitor doesn't
+    // prefer reduced motion. Reduced-motion visitors never download the
+    // video at all; they see the static poster frame as a plain image.
+    (function () {
+      var video = document.getElementById('heroVideo');
+      if (!video) return;
+      var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) return;
+
+      var source = document.createElement('source');
+      source.src = 'video/hero-cinemagraph.mp4';
+      source.type = 'video/mp4';
+      video.appendChild(source);
+      video.load();
+      var playPromise = video.play();
+      if (playPromise && playPromise.catch) {
+        playPromise.catch(function () {
+          // Autoplay blocked by the browser — poster frame remains
+          // visible as the static fallback, exactly as intended.
+        });
+      }
+    })();
+  </script>
+
+  <!-- ── INTRO STATEMENT ─────────────────────────────────── -->
+  <section class="intro-statement">
+    <div class="intro-statement__mark fade-in"></div>
+    <p class="intro-statement__text fade-in fade-in--delay-1">
+      We do not simply plan events.<br>We compose experiences that live on long after the last guest has gone.
+    </p>
+  </section>
+
+  <!-- ── PREVIEW GRID ────────────────────────────────────── -->
+  <section class="preview-section">
+    <div class="preview-section__header fade-in">
+      <span class="eyebrow">Our Work</span>
+    </div>
+
+    <div class="preview-grid">
+
+      <!-- Card 1: Experiences -->
+      <a href="experiences.html" class="preview-card">
+        <div class="preview-card__image preview-card__image--tone-1 img-placeholder" role="img" aria-label="Destination wedding ceremony"></div>
+        <div class="preview-card__overlay"></div>
+        <div class="preview-card__content">
+          <span class="preview-card__eyebrow">Experiences</span>
+          <h2 class="preview-card__title">Events Designed for Extraordinary Lives</h2>
+          <p class="preview-card__text">From destination weddings to intimate celebrations — every experience, bespoke.</p>
+          <span class="preview-card__link">View Experiences</span>
+        </div>
+      </a>
+
+      <!-- Card 2: Signature Displays -->
+      <a href="signature-displays.html" class="preview-card">
+        <div class="preview-card__image preview-card__image--tone-2 img-placeholder" role="img" aria-label="Signature luxury tablescape display"></div>
+        <div class="preview-card__overlay"></div>
+        <div class="preview-card__content">
+          <span class="preview-card__eyebrow">Signature Displays™</span>
+          <h2 class="preview-card__title">The Art of the Table</h2>
+          <p class="preview-card__text">Editorial tablescapes that transform any space into a statement.</p>
+          <span class="preview-card__link">Explore Displays</span>
+        </div>
+      </a>
+
+      <!-- Card 3: Little Luxe -->
+      <a href="little-luxe-collection.html" class="preview-card">
+        <div class="preview-card__image preview-card__image--tone-3 img-placeholder" role="img" aria-label="The Little Luxe Collection children's celebration"></div>
+        <div class="preview-card__overlay"></div>
+        <div class="preview-card__content">
+          <span class="preview-card__eyebrow">Little Luxe Collection</span>
+          <h2 class="preview-card__title">Childhood, Made Magical</h2>
+          <p class="preview-card__text">Refined celebrations for the little ones — beautiful, intentional, unforgettable.</p>
+          <span class="preview-card__link">Discover Little Luxe</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── EDITORIAL FEATURE — Signature Displays ──────────── -->
+  <section class="editorial-feature">
+    <div class="editorial-feature__image-wrap">
+      <div class="editorial-feature__image img-placeholder" role="img" aria-label="Luxury tablescape with florals and candlelight"></div>
+    </div>
+    <div class="editorial-feature__content">
+      <span class="eyebrow fade-in">The Signature Display™</span>
+      <h2 class="section-heading fade-in fade-in--delay-1">A Tablescape<br>Unlike Any Other</h2>
+      <p class="fade-in fade-in--delay-2">Our proprietary Signature Display experience brings editorial luxury to your celebration — no event required.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="signature-displays.html" class="btn-secondary--light btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SIGNATURE TEASER — Gallery ───────────────────────── -->
+  <section class="signature-teaser">
+    <div class="container--narrow">
+      <span class="eyebrow fade-in">Gallery</span>
+      <h2 class="section-heading fade-in fade-in--delay-1">Every Image<br>Tells a Story</h2>
+      <p class="fade-in fade-in--delay-2">Photography is our primary language. Step inside our world.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="gallery.html" class="btn-secondary">View the Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Your Celebration<br>Awaits</h2>
+      <p class="fade-in fade-in--delay-2">Reserve your Private Design Preview — and let us begin.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

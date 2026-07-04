@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Event Design & Destination Celebrations | Fly Girl Events</title>
+  <meta name="description" content="Explore luxury event design, destination weddings, custom tablescapes, children's celebrations, corporate hospitality events, and interior styling by Fly Girl Events & Design." />
+  <link rel="canonical" href="https://flygirl.events/experiences.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="Luxury Event Design & Destination Celebrations | Fly Girl Events" />
+  <meta property="og:description" content="Six experiences, one standard of excellence — destination weddings, celebrations, corporate events, and luxury styling by Fly Girl Events & Design." />
+  <meta property="og:url" content="https://flygirl.events/experiences.html" />
+  <meta property="og:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luxury Event Design & Destination Celebrations | Fly Girl Events" />
+  <meta name="twitter:description" content="Six experiences, one standard of excellence — destination weddings, celebrations, corporate events, and luxury styling by Fly Girl Events & Design." />
+  <meta name="twitter:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flygirl.events/" },
+      { "@type": "ListItem", "position": 2, "name": "Experiences", "item": "https://flygirl.events/experiences.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── EXPERIENCES-SPECIFIC ─────────────────────────── */
+
+    .experience-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: clamp(520px, 62vh, 640px);
+    }
+
+    .experience-row:nth-child(even) .experience-row__image-wrap {
+      order: 2;
+    }
+
+    .experience-row__image-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-row__image {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(520px, 62vh, 640px);
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-luxury);
+    }
+
+    .experience-row:hover .experience-row__image {
+      transform: scale(1.03);
+    }
+
+    .experience-row__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(4rem, 6vw, 7rem) clamp(3rem, 6vw, 6rem);
+    }
+
+    .experience-row__content .section-heading {
+      margin-bottom: var(--space-md);
+    }
+
+    .experience-row__content p {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.72);
+      max-width: 420px;
+      line-height: 1.85;
+    }
+
+    .experience-row__link {
+      position: relative;
+      display: inline-block;
+      margin-top: var(--space-lg);
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      padding-bottom: 3px;
+    }
+
+    .experience-row__link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 1px;
+      background-color: var(--color-gold);
+      transition: right var(--duration-med) var(--ease-luxury);
+    }
+
+    .experience-row__link:hover::after {
+      right: 0;
+    }
+
+    /* Alternating background tints */
+    .experience-row--cream { background-color: var(--color-cream); }
+    .experience-row--mist  { background-color: var(--color-mist); }
+
+    /* Flat, restrained tones — drawn only from the existing
+       palette via color-mix, no gradients. */
+    .ph-1 { background-color: var(--color-plum); }
+    .ph-2 { background-color: var(--color-plum-deep); }
+    .ph-3 { background-color: color-mix(in srgb, var(--color-mauve) 65%, var(--color-cream) 35%); }
+    .ph-4 { background-color: color-mix(in srgb, var(--color-plum-deep) 85%, black 15%); }
+    .ph-5 { background-color: color-mix(in srgb, var(--color-gold) 35%, var(--color-plum) 65%); }
+    .ph-6 { background-color: color-mix(in srgb, var(--color-mauve) 50%, var(--color-plum) 50%); }
+
+    @media (max-width: 900px) {
+      .experience-row,
+      .experience-row:nth-child(even) .experience-row__image-wrap {
+        grid-template-columns: 1fr;
+        order: initial;
+      }
+      .experience-row {
+        display: block;
+      }
+      .experience-row__image,
+      .experience-row__image-wrap {
+        min-height: 420px;
+      }
+      .experience-row__content {
+        padding: clamp(3rem, 8vw, 4rem) var(--space-xl);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--transparent" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── PAGE HERO ───────────────────────────────────────── -->
+  <main>
+  <header class="page-hero">
+    <div class="page-hero__image img-placeholder" role="img" aria-label="Luxury event experience"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="page-hero__eyebrow">Experiences</span>
+      <h1 class="page-hero__title">Events Designed for Extraordinary Lives</h1>
+      <p class="page-hero__subtitle">Every celebration, composed with intention — from Texas to destinations worldwide.</p>
+    </div>
+  </header>
+
+  <!-- ── INTRO ───────────────────────────────────────────── -->
+  <section class="intro-statement">
+    <div class="intro-statement__mark fade-in"></div>
+    <p class="intro-statement__text fade-in fade-in--delay-1">
+      Six experiences.<br>One standard of excellence.
+    </p>
+  </section>
+
+  <!-- ── EXPERIENCE 1: DESTINATION WEDDINGS ──────────────── -->
+  <section class="experience-row experience-row--cream">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-1 img-placeholder fade-in" role="img" aria-label="Destination wedding ceremony"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Destination Weddings</h2>
+      <p class="fade-in fade-in--delay-1">Your love story, staged in the world's most breathtaking settings.</p>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE 2: ADULT CELEBRATIONS ────────────────── -->
+  <section class="experience-row experience-row--mist">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-2 img-placeholder fade-in" role="img" aria-label="Elegant adult celebration"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Adult Celebrations</h2>
+      <p class="fade-in fade-in--delay-1">Milestone birthdays and gatherings, elevated to editorial art.</p>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE 3: CHILDREN'S CELEBRATIONS ───────────── -->
+  <section class="experience-row experience-row--cream">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-3 img-placeholder fade-in" role="img" aria-label="Children's luxury celebration"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Children's Celebrations</h2>
+      <p class="fade-in fade-in--delay-1">Refined, beautiful moments for the smallest guests of honor.</p>
+      <a href="little-luxe-collection.html" class="experience-row__link fade-in fade-in--delay-2">Explore Little Luxe</a>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE 4: CORPORATE & HOSPITALITY ───────────── -->
+  <section class="experience-row experience-row--mist">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-4 img-placeholder fade-in" role="img" aria-label="Corporate hospitality event"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Corporate &amp; Hospitality Events</h2>
+      <p class="fade-in fade-in--delay-1">Brand experiences with the polish of a five-star property.</p>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE 5: LUXURY TABLESCAPE STYLING ─────────── -->
+  <section class="experience-row experience-row--cream">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-5 img-placeholder fade-in" role="img" aria-label="Luxury tablescape styling"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Luxury Tablescape Styling</h2>
+      <p class="fade-in fade-in--delay-1">The table, transformed into the centerpiece of the evening.</p>
+      <a href="signature-displays.html" class="experience-row__link fade-in fade-in--delay-2">View Signature Displays</a>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE 6: INTERIOR STYLING ──────────────────── -->
+  <section class="experience-row experience-row--mist">
+    <div class="experience-row__image-wrap">
+      <div class="experience-row__image ph-6 img-placeholder fade-in" role="img" aria-label="Luxury interior styling"></div>
+    </div>
+    <div class="experience-row__content">
+      <h2 class="section-heading fade-in">Interior Styling</h2>
+      <p class="fade-in fade-in--delay-1">Spaces styled with the same eye we bring to every celebration.</p>
+    </div>
+  </section>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Let's Design Something<br>Extraordinary</h2>
+      <p class="fade-in fade-in--delay-2">Reserve your Private Design Preview to begin.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+        <p>Based in Frisco, Texas • Serving Dallas–Fort Worth • Available Nationwide &amp; for Destination Celebrations</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

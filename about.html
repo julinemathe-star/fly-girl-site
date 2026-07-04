@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Fly Girl Events & Design | Luxury Event Studio</title>
+  <meta name="description" content="Meet the studio behind Fly Girl Events & Design — a luxury event design team based in Frisco, Texas, crafting destination weddings and celebrations nationwide." />
+  <link rel="canonical" href="https://flygirl.events/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="About Fly Girl Events & Design | Luxury Event Studio" />
+  <meta property="og:description" content="The story and the studio behind Fly Girl Events & Design — luxury event design rooted in editorial elegance." />
+  <meta property="og:url" content="https://flygirl.events/about.html" />
+  <meta property="og:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Fly Girl Events & Design | Luxury Event Studio" />
+  <meta name="twitter:description" content="The story and the studio behind Fly Girl Events & Design — luxury event design rooted in editorial elegance." />
+  <meta name="twitter:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flygirl.events/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://flygirl.events/about.html" }
+    ]
+  }
+  </script>
+
+  <!-- Structured data: Business entity (repeated here per standard practice
+       of reinforcing the entity on the About page). See index.html for the
+       note on why ProfessionalService is used in place of "EventPlanner". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://flygirl.events/#business",
+    "name": "Fly Girl Events & Design",
+    "description": "Luxury event design studio based in Frisco, Texas, specializing in destination weddings, custom tablescapes, and editorial celebrations for clients throughout Dallas–Fort Worth, nationwide, and worldwide.",
+    "url": "https://flygirl.events/",
+    "email": "hello@flygirlevents.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Frisco",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Dallas–Fort Worth" },
+      { "@type": "State", "name": "Texas" },
+      { "@type": "Country", "name": "United States" }
+    ],
+    "priceRange": "$$$$"
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── ABOUT-SPECIFIC ────────────────────────────────── */
+
+    .story-section {
+      padding-block: var(--space-3xl);
+      background-color: var(--color-cream);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: var(--space-2xl);
+      align-items: center;
+    }
+
+    .story-grid__image {
+      aspect-ratio: 4/5;
+      background: linear-gradient(150deg, #3B1F2B, #C4A4B0);
+    }
+
+    .story-grid__content .eyebrow {
+      margin-bottom: var(--space-md);
+    }
+
+    .story-grid__content p {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-xl), 2.4vw, var(--text-2xl));
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-plum);
+      line-height: 1.55;
+    }
+
+    /* Team */
+    .team-section {
+      padding-block: var(--space-3xl) var(--space-4xl);
+      background-color: var(--color-mist);
+      text-align: center;
+    }
+
+    .team-section__header {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+      max-width: var(--max-width);
+      margin-inline: auto;
+    }
+
+    .team-card__portrait {
+      aspect-ratio: 3/4;
+      width: 100%;
+      margin-bottom: var(--space-md);
+    }
+
+    .team-card__portrait--1 { background: linear-gradient(160deg, #5C3347, #E8D8DE); }
+    .team-card__portrait--2 { background: linear-gradient(160deg, #8C6070, #C9A96E); }
+    .team-card__portrait--3 { background: linear-gradient(160deg, #3B1F2B, #C4A4B0); }
+
+    .team-card__name {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--color-plum);
+      margin-bottom: 0.25rem;
+    }
+
+    .team-card__title {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-sm);
+    }
+
+    .team-card__text {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.68);
+      max-width: 280px;
+      margin-inline: auto;
+      line-height: 1.7;
+    }
+
+    /* Values strip */
+    .values-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: var(--color-plum-deep);
+    }
+
+    .values-strip__item {
+      padding: var(--space-2xl);
+      text-align: center;
+      border-right: 1px solid rgba(201, 169, 110, 0.15);
+    }
+
+    .values-strip__item:last-child { border-right: none; }
+
+    .values-strip__item h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--color-cream);
+      margin-bottom: var(--space-xs);
+    }
+
+    .values-strip__item p {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: rgba(250, 248, 245, 0.55);
+    }
+
+    @media (max-width: 900px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+      .values-strip {
+        grid-template-columns: 1fr;
+      }
+      .values-strip__item {
+        border-right: none;
+        border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+      }
+      .values-strip__item:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--scrolled" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── PAGE HERO ───────────────────────────────────────── -->
+  <main>
+  <header class="page-hero">
+    <div class="page-hero__image img-placeholder" role="img" aria-label="Fly Girl Events and Design studio"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="page-hero__eyebrow">About</span>
+      <h1 class="page-hero__title">The Story Behind the Studio</h1>
+    </div>
+  </header>
+
+  <!-- ── STORY ───────────────────────────────────────────── -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-grid__image img-placeholder fade-in" role="img" aria-label="Founder portrait"></div>
+        <div class="story-grid__content">
+          <span class="eyebrow fade-in">Our Story</span>
+          <p class="fade-in fade-in--delay-1">Fly Girl Events &amp; Design was born from a simple belief — that every celebration deserves the polish of a five-star property and the soul of a personal story. What began as an eye for detail has grown into a studio trusted with life's most extraordinary moments, from destination weddings to the smallest, most meaningful gatherings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VALUES STRIP ─────────────────────────────────────── -->
+  <section class="values-strip">
+    <div class="values-strip__item fade-in">
+      <h2>Intentional</h2>
+      <p>Every detail, chosen on purpose.</p>
+    </div>
+    <div class="values-strip__item fade-in fade-in--delay-1">
+      <h2>Elevated</h2>
+      <p>Editorial polish, always.</p>
+    </div>
+    <div class="values-strip__item fade-in fade-in--delay-2">
+      <h2>Personal</h2>
+      <p>Your story, beautifully told.</p>
+    </div>
+  </section>
+
+  <!-- ── TEAM ────────────────────────────────────────────── -->
+  <section class="team-section">
+    <div class="team-section__header">
+      <span class="eyebrow fade-in">The Studio</span>
+      <h2 class="section-heading fade-in fade-in--delay-1">Meet the Team</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card fade-in">
+        <div class="team-card__portrait team-card__portrait--1 img-placeholder"></div>
+        <h3 class="team-card__name">Founder Name</h3>
+        <p class="team-card__title">Founder &amp; Creative Director</p>
+        <p class="team-card__text">Leads every design with an editorial eye and a devotion to detail.</p>
+      </div>
+      <div class="team-card fade-in fade-in--delay-1">
+        <div class="team-card__portrait team-card__portrait--2 img-placeholder"></div>
+        <h3 class="team-card__name">Team Member</h3>
+        <p class="team-card__title">Lead Event Designer</p>
+        <p class="team-card__text">Brings each celebration's vision to life, from concept to final detail.</p>
+      </div>
+      <div class="team-card fade-in fade-in--delay-2">
+        <div class="team-card__portrait team-card__portrait--3 img-placeholder"></div>
+        <h3 class="team-card__name">Team Member</h3>
+        <p class="team-card__title">Styling &amp; Production</p>
+        <p class="team-card__text">Ensures every display is styled and installed with precision.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__bg" aria-hidden="true"></div>
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Let's Tell Your<br>Story Next</h2>
+      <p class="fade-in fade-in--delay-2">Reserve your Private Design Preview to begin.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

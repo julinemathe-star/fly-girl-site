@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Children's Celebrations | The Little Luxe Collection</title>
+  <meta name="description" content="The Little Luxe Collection — refined, editorial celebrations for children, by Fly Girl Events & Design in Frisco, Texas." />
+  <link rel="canonical" href="https://flygirl.events/little-luxe-collection.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="Luxury Children's Celebrations | The Little Luxe Collection" />
+  <meta property="og:description" content="Refined, beautiful celebrations for children, by Fly Girl Events & Design." />
+  <meta property="og:url" content="https://flygirl.events/little-luxe-collection.html" />
+  <meta property="og:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luxury Children's Celebrations | The Little Luxe Collection" />
+  <meta name="twitter:description" content="Refined, beautiful celebrations for children, by Fly Girl Events & Design." />
+  <meta name="twitter:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flygirl.events/" },
+      { "@type": "ListItem", "position": 2, "name": "The Little Luxe Collection", "item": "https://flygirl.events/little-luxe-collection.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── LITTLE LUXE-SPECIFIC ──────────────────────────── */
+    /* Soft sub-palette, used only as accent chips — brand system unchanged */
+    :root {
+      --ll-lavender:  #C9BFE0;
+      --ll-blush:     #F0C9C9;
+      --ll-champagne: #E8D4A8;
+      --ll-mint:      #BFDCC9;
+    }
+
+    .ll-intro {
+      padding-block: var(--space-2xl) var(--space-xl);
+      text-align: center;
+      background-color: var(--color-cream);
+    }
+
+    /* Palette chips */
+    .ll-palette {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-md);
+      margin-top: var(--space-lg);
+    }
+
+    .ll-chip {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .ll-chip__swatch {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .ll-chip--lavender  .ll-chip__swatch { background: var(--ll-lavender); }
+    .ll-chip--blush     .ll-chip__swatch { background: var(--ll-blush); }
+    .ll-chip--champagne .ll-chip__swatch { background: var(--ll-champagne); }
+    .ll-chip--mint       .ll-chip__swatch { background: var(--ll-mint); }
+
+    .ll-chip span {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-charcoal);
+      opacity: 0.55;
+    }
+
+    /* Category grid */
+    .ll-categories {
+      padding-block: var(--space-xl) var(--space-3xl);
+      background-color: var(--color-cream);
+    }
+
+    .ll-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+    }
+
+    .ll-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      display: block;
+    }
+
+    .ll-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--duration-slow) var(--ease-luxury);
+    }
+
+    .ll-card:hover .ll-card__image {
+      transform: scale(1.05);
+    }
+
+    .ll-card--lavender  .ll-card__image { background: linear-gradient(160deg, var(--ll-lavender), #FAF8F5); }
+    .ll-card--blush     .ll-card__image { background: linear-gradient(160deg, var(--ll-blush), #FAF8F5); }
+    .ll-card--champagne .ll-card__image { background: linear-gradient(160deg, var(--ll-champagne), #FAF8F5); }
+    .ll-card--mint       .ll-card__image { background: linear-gradient(160deg, var(--ll-mint), #FAF8F5); }
+
+    .ll-card__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(42, 21, 32, 0.65) 0%, transparent 55%);
+    }
+
+    .ll-card__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-md);
+    }
+
+    .ll-card__content h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-cream);
+    }
+
+    /* Feature editorial band */
+    .ll-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 520px;
+      background-color: var(--color-mist);
+    }
+
+    .ll-feature__image {
+      background: linear-gradient(150deg, var(--ll-blush), var(--ll-lavender));
+      min-height: 520px;
+    }
+
+    .ll-feature__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: var(--space-3xl) var(--space-2xl);
+    }
+
+    .ll-feature__content .section-heading { margin-bottom: var(--space-md); }
+    .ll-feature__content p {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.72);
+      max-width: 420px;
+      line-height: 1.85;
+      margin-bottom: var(--space-lg);
+    }
+
+    /* Note */
+    .ll-note {
+      padding-block: var(--space-xl);
+      text-align: center;
+      background-color: var(--color-cream);
+    }
+
+    .ll-note p {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.55);
+      max-width: 480px;
+      margin-inline: auto;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .ll-grid { grid-template-columns: repeat(2, 1fr); }
+      .ll-feature { grid-template-columns: 1fr; }
+      .ll-feature__image { min-height: 360px; }
+    }
+
+    @media (max-width: 600px) {
+      .ll-palette { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--scrolled" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── PAGE HERO ───────────────────────────────────────── -->
+  <main>
+  <header class="page-hero">
+    <div class="page-hero__image img-placeholder" role="img" aria-label="The Little Luxe Collection celebration"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="page-hero__eyebrow">The Little Luxe Collection</span>
+      <h1 class="page-hero__title">Childhood, Made Magical</h1>
+      <p class="page-hero__subtitle">Refined celebrations for the little ones.</p>
+    </div>
+  </header>
+
+  <!-- ── INTRO + PALETTE ──────────────────────────────────── -->
+  <section class="ll-intro">
+    <p class="intro-statement__text fade-in" style="font-size: clamp(1.5rem, 2.8vw, 2.25rem);">
+      Beautiful, intentional,<br>unmistakably little luxe.
+    </p>
+
+    <div class="ll-palette fade-in fade-in--delay-1">
+      <div class="ll-chip ll-chip--lavender"><div class="ll-chip__swatch"></div><span>Lavender</span></div>
+      <div class="ll-chip ll-chip--blush"><div class="ll-chip__swatch"></div><span>Blush</span></div>
+      <div class="ll-chip ll-chip--champagne"><div class="ll-chip__swatch"></div><span>Champagne</span></div>
+      <div class="ll-chip ll-chip--mint"><div class="ll-chip__swatch"></div><span>Mint</span></div>
+    </div>
+  </section>
+
+  <!-- ── CATEGORY GRID ────────────────────────────────────── -->
+  <section class="ll-categories">
+    <div class="container">
+      <div class="ll-grid">
+        <a href="begin-your-journey.html" class="ll-card ll-card--lavender fade-in">
+          <div class="ll-card__image img-placeholder" role="img" aria-label="First birthday celebration"></div>
+          <div class="ll-card__overlay"></div>
+          <div class="ll-card__content"><h2>First Birthdays</h2></div>
+        </a>
+        <a href="begin-your-journey.html" class="ll-card ll-card--blush fade-in fade-in--delay-1">
+          <div class="ll-card__image img-placeholder" role="img" aria-label="Tea party celebration"></div>
+          <div class="ll-card__overlay"></div>
+          <div class="ll-card__content"><h2>Tea Parties</h2></div>
+        </a>
+        <a href="begin-your-journey.html" class="ll-card ll-card--champagne fade-in fade-in--delay-2">
+          <div class="ll-card__image img-placeholder" role="img" aria-label="Milestone celebration"></div>
+          <div class="ll-card__overlay"></div>
+          <div class="ll-card__content"><h2>Milestone Moments</h2></div>
+        </a>
+        <a href="begin-your-journey.html" class="ll-card ll-card--mint fade-in fade-in--delay-3">
+          <div class="ll-card__image img-placeholder" role="img" aria-label="Dessert table styling"></div>
+          <div class="ll-card__overlay"></div>
+          <div class="ll-card__content"><h2>Dessert Tables</h2></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURE BAND ─────────────────────────────────────── -->
+  <section class="ll-feature">
+    <div class="ll-feature__image fade-in" role="img" aria-label="Little Luxe styled celebration"></div>
+    <div class="ll-feature__content">
+      <span class="eyebrow fade-in">Our Approach</span>
+      <h2 class="section-heading fade-in fade-in--delay-1">Styled With the<br>Same Care</h2>
+      <p class="fade-in fade-in--delay-2">Every Little Luxe celebration receives the same editorial eye as our largest events.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-secondary">Inquire</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NOTE ────────────────────────────────────────────── -->
+  <section class="ll-note">
+    <p class="fade-in">We're happy to recommend trusted balloon artists.</p>
+  </section>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__bg" aria-hidden="true"></div>
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Let's Plan Something<br>Little &amp; Luxe</h2>
+      <p class="fade-in fade-in--delay-2">Reserve your Private Design Preview to begin.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

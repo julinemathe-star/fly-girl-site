@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Event Design Gallery | Fly Girl Events & Design</title>
+  <meta name="description" content="An editorial gallery of luxury weddings, tablescapes, and celebrations by Fly Girl Events & Design — based in Frisco, Texas, working nationwide and worldwide." />
+  <link rel="canonical" href="https://flygirl.events/gallery.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="Luxury Event Design Gallery | Fly Girl Events & Design" />
+  <meta property="og:description" content="An editorial gallery of luxury weddings, tablescapes, and celebrations by Fly Girl Events & Design." />
+  <meta property="og:url" content="https://flygirl.events/gallery.html" />
+  <meta property="og:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luxury Event Design Gallery | Fly Girl Events & Design" />
+  <meta name="twitter:description" content="An editorial gallery of luxury weddings, tablescapes, and celebrations by Fly Girl Events & Design." />
+  <meta name="twitter:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flygirl.events/" },
+      { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://flygirl.events/gallery.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── GALLERY-SPECIFIC ──────────────────────────────── */
+
+    .gallery-intro {
+      padding-block: var(--space-2xl) var(--space-xl);
+      text-align: center;
+      background-color: var(--color-cream);
+    }
+
+    .gallery-stream {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xl);
+      padding-block: var(--space-xl) var(--space-3xl);
+      background-color: var(--color-cream);
+    }
+
+    .gallery-item {
+      width: 100%;
+    }
+
+    .gallery-stream figure {
+      margin: 0;
+    }
+
+    .gallery-item__image {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .gallery-item__caption {
+      margin-top: var(--space-md);
+      text-align: center;
+    }
+
+    .gallery-item__caption span {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-mauve);
+    }
+
+    /* Sizes for editorial rhythm */
+    .gallery-item--full .gallery-item__image {
+      aspect-ratio: 21/9;
+    }
+
+    .gallery-item--pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+    }
+
+    .gallery-item--pair .gallery-item__image {
+      aspect-ratio: 4/5;
+    }
+
+    .gallery-item--portrait {
+      max-width: 640px;
+      margin-inline: auto;
+    }
+
+    .gallery-item--portrait .gallery-item__image {
+      aspect-ratio: 3/4;
+    }
+
+    /* Placeholder gradients */
+    .g-1 { background: linear-gradient(150deg, #3B1F2B, #C4A4B0); }
+    .g-2 { background: linear-gradient(150deg, #5C3347, #E8D8DE); }
+    .g-3 { background: linear-gradient(150deg, #C9A96E, #F2EEE9); }
+    .g-4 { background: linear-gradient(150deg, #2A1520, #8C6070); }
+    .g-5 { background: linear-gradient(150deg, #8C6070, #C9A96E); }
+    .g-6 { background: linear-gradient(150deg, #3B1F2B, #E2C99A); }
+    .g-7 { background: linear-gradient(150deg, #5C3347, #C9A96E); }
+
+    @media (max-width: 768px) {
+      .gallery-item--pair {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+      .gallery-item--full .gallery-item__image {
+        aspect-ratio: 4/3;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--scrolled" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── PAGE HERO ───────────────────────────────────────── -->
+  <main>
+  <header class="page-hero">
+    <div class="page-hero__image img-placeholder" role="img" aria-label="Editorial gallery cover image"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="page-hero__eyebrow">Gallery</span>
+      <h1 class="page-hero__title">A Visual Story</h1>
+    </div>
+  </header>
+
+  <!-- ── INTRO ───────────────────────────────────────────── -->
+  <section class="gallery-intro">
+    <p class="intro-statement__text fade-in" style="font-size: clamp(1.5rem, 2.8vw, 2.25rem);">
+      Some things are best said<br>in photographs.
+    </p>
+  </section>
+
+  <!-- ── GALLERY STREAM ──────────────────────────────────── -->
+  <div class="gallery-stream container--wide">
+
+    <figure class="gallery-item gallery-item--full fade-in">
+      <div class="gallery-item__image g-1 img-placeholder" role="img" aria-label="Luxury destination wedding reception"></div>
+      <figcaption class="gallery-item__caption"><span>Destination Wedding — Riviera Maya</span></figcaption>
+    </figure>
+
+    <div class="gallery-item gallery-item--pair">
+      <figure class="fade-in">
+        <div class="gallery-item__image g-2 img-placeholder" role="img" aria-label="Editorial tablescape detail"></div>
+        <figcaption class="gallery-item__caption"><span>Signature Display</span></figcaption>
+      </figure>
+      <figure class="fade-in fade-in--delay-1">
+        <div class="gallery-item__image g-3 img-placeholder" role="img" aria-label="Floral centerpiece detail"></div>
+        <figcaption class="gallery-item__caption"><span>Floral Detail</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="gallery-item gallery-item--portrait fade-in">
+      <div class="gallery-item__image g-4 img-placeholder" role="img" aria-label="Adult celebration portrait"></div>
+      <figcaption class="gallery-item__caption"><span>Milestone Celebration</span></figcaption>
+    </figure>
+
+    <figure class="gallery-item gallery-item--full fade-in">
+      <div class="gallery-item__image g-5 img-placeholder" role="img" aria-label="Corporate hospitality event space"></div>
+      <figcaption class="gallery-item__caption"><span>Corporate Hospitality</span></figcaption>
+    </figure>
+
+    <div class="gallery-item gallery-item--pair">
+      <figure class="fade-in">
+        <div class="gallery-item__image g-6 img-placeholder" role="img" aria-label="Children's celebration setting"></div>
+        <figcaption class="gallery-item__caption"><span>Little Luxe Collection</span></figcaption>
+      </figure>
+      <figure class="fade-in fade-in--delay-1">
+        <div class="gallery-item__image g-7 img-placeholder" role="img" aria-label="Interior styling vignette"></div>
+        <figcaption class="gallery-item__caption"><span>Interior Styling</span></figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__bg" aria-hidden="true"></div>
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Let's Create Your<br>Next Story</h2>
+      <p class="fade-in fade-in--delay-2">Reserve your Private Design Preview to begin.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

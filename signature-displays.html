@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signature Displays & Luxury Tablescapes | Fly Girl Events</title>
+  <meta name="description" content="The Signature Display™ — editorial tablescape artistry from Fly Girl Events & Design, no event required." />
+  <link rel="canonical" href="https://flygirl.events/signature-displays.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fly Girl Events & Design" />
+  <meta property="og:title" content="Signature Displays & Luxury Tablescapes | Fly Girl Events" />
+  <meta property="og:description" content="The Signature Display™ — a curated luxury tablescape experience, designed and styled as a standalone work of art." />
+  <meta property="og:url" content="https://flygirl.events/signature-displays.html" />
+  <meta property="og:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Signature Displays & Luxury Tablescapes | Fly Girl Events" />
+  <meta name="twitter:description" content="The Signature Display™ — a curated luxury tablescape experience, designed and styled as a standalone work of art." />
+  <meta name="twitter:image" content="https://flygirl.events/images/luxury-destination-wedding-ceremony-sunset.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#2A1520" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Structured data: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://flygirl.events/" },
+      { "@type": "ListItem", "position": 2, "name": "Signature Displays", "item": "https://flygirl.events/signature-displays.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── SIGNATURE DISPLAYS-SPECIFIC ──────────────────── */
+
+    .sd-intro {
+      padding-block: clamp(5rem, 9vw, 8rem);
+      text-align: center;
+      background-color: var(--color-cream);
+    }
+
+    .sd-intro .eyebrow {
+      margin-bottom: var(--space-lg);
+    }
+
+    .sd-intro p {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-2xl), 3.2vw, var(--text-4xl));
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-plum);
+      line-height: 1.3;
+      max-width: 760px;
+      margin-inline: auto;
+      padding-inline: var(--space-xl);
+      margin-bottom: var(--space-xl);
+    }
+
+    /* Full bleed image — flat tone standing in for photography */
+    .sd-full-image {
+      width: 100%;
+      aspect-ratio: 21/9;
+      background-color: var(--color-plum);
+      box-shadow: inset 0 0 0 1px rgba(201, 169, 110, 0.18);
+    }
+
+    /* Three-pillar grid */
+    .sd-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background-color: var(--color-mist);
+    }
+
+    .sd-pillar {
+      background-color: var(--color-cream);
+      padding: clamp(3rem, 5vw, 4.5rem) var(--space-lg);
+      text-align: center;
+    }
+
+    .sd-pillar__number {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: var(--text-3xl);
+      color: var(--color-gold);
+      margin-bottom: var(--space-md);
+    }
+
+    .sd-pillar h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 400;
+      color: var(--color-plum);
+      margin-bottom: var(--space-sm);
+    }
+
+    .sd-pillar p {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 300;
+      color: rgba(44, 44, 44, 0.68);
+      line-height: 1.75;
+    }
+
+    /* Gallery strip — flat, restrained tones, no gradients */
+    .sd-strip {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 1px;
+      background-color: var(--color-mist);
+    }
+
+    .sd-strip__image {
+      min-height: 480px;
+    }
+
+    .sd-strip__a { background-color: var(--color-plum); }
+    .sd-strip__b { background-color: color-mix(in srgb, var(--color-mauve) 55%, var(--color-plum) 45%); }
+
+    @media (max-width: 900px) {
+      .sd-pillars { grid-template-columns: 1fr; }
+      .sd-strip { grid-template-columns: 1fr; }
+      .sd-strip__image { min-height: 340px; }
+      .sd-full-image { aspect-ratio: 4/3; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="site-nav site-nav--transparent" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Fly Girl <span>&amp;</span> Design</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="signature-displays.html">Signature Displays</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="little-luxe-collection.html">Little Luxe</a></li>
+      <li><a href="investment.html">Investment</a></li>
+    </ul>
+    <a href="begin-your-journey.html" class="btn-primary nav-cta">Begin Your Journey</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="nav-mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="signature-displays.html">Signature Displays</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="little-luxe-collection.html">Little Luxe</a>
+    <a href="investment.html">Investment</a>
+    <a href="begin-your-journey.html">Begin Your Journey</a>
+  </div>
+
+  <!-- ── PAGE HERO ───────────────────────────────────────── -->
+  <main>
+  <header class="page-hero">
+    <div class="page-hero__image img-placeholder" role="img" aria-label="The Signature Display tablescape"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="page-hero__eyebrow">The Signature Display™</span>
+      <h1 class="page-hero__title">The Art of the Table</h1>
+      <p class="page-hero__subtitle">Editorial tablescape design, no event required.</p>
+    </div>
+  </header>
+
+  <!-- ── INTRO STATEMENT + FIRST CTA ─────────────────────── -->
+  <section class="sd-intro">
+    <span class="eyebrow fade-in">The Signature Display™</span>
+    <p class="fade-in fade-in--delay-1">A curated tablescape experience — designed, styled, and delivered as a standalone work of art.</p>
+    <div class="fade-in fade-in--delay-2">
+      <a href="begin-your-journey.html" class="btn-primary">Reserve Your Display</a>
+    </div>
+  </section>
+
+  <!-- ── FULL BLEED IMAGE ─────────────────────────────────── -->
+  <div class="sd-full-image fade-in" role="img" aria-label="Signature Display full tablescape"></div>
+
+  <!-- ── THREE PILLARS ────────────────────────────────────── -->
+  <section class="sd-pillars">
+    <div class="sd-pillar">
+      <div class="sd-pillar__number fade-in">I.</div>
+      <h2 class="fade-in fade-in--delay-1">Design</h2>
+      <p class="fade-in fade-in--delay-2">A concept built around your palette, your story, your occasion.</p>
+    </div>
+    <div class="sd-pillar">
+      <div class="sd-pillar__number fade-in">II.</div>
+      <h2 class="fade-in fade-in--delay-1">Styling</h2>
+      <p class="fade-in fade-in--delay-2">Every linen, vessel, and bloom placed with editorial precision.</p>
+    </div>
+    <div class="sd-pillar">
+      <div class="sd-pillar__number fade-in">III.</div>
+      <h2 class="fade-in fade-in--delay-1">Delivery</h2>
+      <p class="fade-in fade-in--delay-2">Installed and styled on-site, ready before your guests arrive.</p>
+    </div>
+  </section>
+
+  <!-- ── GALLERY STRIP ────────────────────────────────────── -->
+  <div class="sd-strip">
+    <div class="sd-strip__image sd-strip__a fade-in" role="img" aria-label="Signature Display detail, florals and candlelight"></div>
+    <div class="sd-strip__image sd-strip__b fade-in" role="img" aria-label="Signature Display detail, place setting"></div>
+  </div>
+
+  <!-- ── CLOSING STATEMENT ────────────────────────────────── -->
+  <section class="intro-statement">
+    <div class="intro-statement__mark fade-in"></div>
+    <p class="intro-statement__text fade-in fade-in--delay-1">
+      The table sets the tone.<br>We make sure it speaks.
+    </p>
+  </section>
+
+  <!-- ── CLOSING CTA ─────────────────────────────────────── -->
+  <section class="closing-cta">
+    <div class="closing-cta__content">
+      <span class="eyebrow fade-in">Begin Your Journey</span>
+      <h2 class="closing-cta__heading fade-in fade-in--delay-1">Reserve Your<br>Signature Display</h2>
+      <p class="fade-in fade-in--delay-2">Begin with a Private Design Preview.</p>
+      <div class="fade-in fade-in--delay-3">
+        <a href="begin-your-journey.html" class="btn-primary btn-primary--light">Begin Your Journey</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Fly Girl <span>&amp;</span> Design</span>
+        <p>Luxury event design and editorial tablescapes — crafted with intention, executed with precision.</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="signature-displays.html">Signature Displays</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="little-luxe-collection.html">Little Luxe Collection</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="begin-your-journey.html">Begin Your Journey</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Frisco, Texas</p>
+        <a href="mailto:hello@flygirlevents.com">hello@flygirlevents.com</a>
+        <br>
+        <a href="begin-your-journey.html" class="btn-secondary" style="margin-top:1.5rem; font-size: 0.6875rem;">Begin Your Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Fly Girl Events &amp; Design. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
